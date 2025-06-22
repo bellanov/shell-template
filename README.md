@@ -6,8 +6,16 @@ The template contains examples of best practices and standards derived from the 
 
 ## Scripts
 
-Summary of each examplee.
+Summary of the available scripts and their usage. Details available within each script.
 
 | Script      | Description |
 | ----------- | ----------- |
-| **hello.sh** | Says Hello. |
+| **lint.sh** | Lint the codebase. |
+
+## Examples
+
+Summary of each example.
+
+| Example      | Description |
+| ----------- | ----------- |
+| **lint.sh** | Lint the codebase. |
