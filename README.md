@@ -50,9 +50,14 @@ The `args.sh` example shows how to parse command-line arguments:
 ```bash
 while (($# > 0)); do
   case "$1" in
-    -g | --greeting) greeting="$1" ;;
+    -g | --greeting)
+      shift
+      greeting="$1"
+      ;;
     -h | --help) usage; exit 0 ;;
-    *) err "Unknown option: $1" ;;
+    *)
+      name="$1"
+      ;;
   esac
   shift
 done
