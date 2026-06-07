@@ -30,11 +30,16 @@ jobs:
         run: |
           # Update package list and install dependencies
           sudo apt-get update
-          sudo apt-get install -y shellcheck
+          sudo apt-get install -y shellcheck bats
 
       # Lint the codebase
       - name: Lint the codebase
         run: |
           # Run shellcheck on all shell scripts in the repository
-          shellcheck examples/*
-          shellcheck scripts/* 
+          bash scripts/lint.sh
+
+      # Test the codebase
+      - name: Test the codebase
+        run: |
+          # Run BATS tests
+          bash scripts/test.sh 
