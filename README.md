@@ -24,7 +24,7 @@ Summary of each example. Each example demonstrates different design patterns for
 
 | Example         | Description |
 | --------------- | ----------- |
-| **hello.sh**    | Demonstrates error handling patterns with structured error messages. |
+| **hello.sh**    | Simple example demonstrating the error handling pattern for reference. |
 | **args.sh**     | Demonstrates command-line argument parsing with validation and help messages. |
 | **functions.sh** | Demonstrates function organization, modularity, and composition. |
 | **logging.sh**  | Demonstrates structured logging with different log levels (INFO, WARN, ERROR). |

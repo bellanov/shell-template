@@ -6,6 +6,11 @@
 set -euo pipefail
 
 # Log level constants
+# Lower numeric values = more verbose (show more messages)
+# Higher numeric values = less verbose (show fewer messages)
+# Examples: LOG_LEVEL=0 shows all (INFO, WARN, ERROR)
+#          LOG_LEVEL=1 shows WARN and ERROR
+#          LOG_LEVEL=2 shows only ERROR
 readonly LOG_LEVEL_INFO=0
 readonly LOG_LEVEL_WARN=1
 readonly LOG_LEVEL_ERROR=2

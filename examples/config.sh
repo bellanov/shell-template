@@ -17,6 +17,10 @@ DEBUG="${DEBUG:-false}"
 #   CONFIG_FILE
 # Arguments:
 #   None
+# Security Note:
+#   Sourcing external files can execute arbitrary code if compromised.
+#   In production, consider parsing the file line-by-line and validating
+#   each configuration key-value pair instead.
 #######################################
 load_config() {
   if [[ -f "$CONFIG_FILE" ]]; then
