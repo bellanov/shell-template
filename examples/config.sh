@@ -24,8 +24,6 @@ DEBUG="${DEBUG:-false}"
 #######################################
 load_config() {
   if [[ -f "$CONFIG_FILE" ]]; then
-    # Source the config file in a subshell to avoid polluting the environment
-    # with unintended variables
     # shellcheck source=/dev/null
     source "$CONFIG_FILE"
     echo "Configuration loaded from $CONFIG_FILE" >&2

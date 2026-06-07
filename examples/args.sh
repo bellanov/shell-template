@@ -53,6 +53,7 @@ main() {
         exit 0
         ;;
       -*)
+        usage
         err "Unknown option: $1"
         ;;
       *)
